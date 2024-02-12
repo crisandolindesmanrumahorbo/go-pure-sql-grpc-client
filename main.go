@@ -58,6 +58,10 @@ type Address struct {
 	ZipCode string `json:"zipCode"`
 }
 
+func NewDB(dbmock *sql.DB) {
+	db = dbmock
+}
+
 func init() {
 	initLogger()
 	// initEnv()
